@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#main-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(.\assets\building.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+#container {
+  height: 600px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+#photo-holder {
+  height: 100%;
+  width: 100%;
+  background-image: url(.\assets\building.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+#photo-holder text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text {
+  height: 25px;
+  color: white;
+  font-weight: 500;
+  border: 3px solid;
+  margin: 25px 25px 0px 75px;
+  border-radius: 10px;
+}
+
+@media (max-width: 770px) and (min-width: 700px) {
+  #text {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #text {
+    padding-bottom: 50px;
+  }
+}
+
+#text-holder {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+#space {
+  height: 15px;
+}
+
+#already-have-an-account-box {
+  align-self: end;
+  color: #777878;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-right: 68px;
+  font-weight: 450;
+}
+
+#already-have-an-account-box button {
+  background-color: white;
+  color: #777878;
+  border: 2px solid #777878;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 450;
+  height: 30px;
+  width: 75px;
+}
+
+#create-account-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#create-text {
+  color: #65a2e3;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#f-e-s {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(184, 184, 184);
+}
+
+input {
+  padding-left: 10px;
+  width: 97%;
+  height: 62px;
+  border: 0;
+  font-weight: 300;
+  font-size: 15px;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+}
+
+#student-id input {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#forgot a {
+  color: #777878;
+}
+
+#forgot-div {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 80px;
+  font-size: small;
+}
+
+#btn-signup button {
+  background-color: #65a2e3;
+  color: white;
+  margin-left: 75px;
+  height: 40px;
+  width: 80px;
+  border: 0;
+  border-radius: 15px;
+  font-weight: bold;
+}
